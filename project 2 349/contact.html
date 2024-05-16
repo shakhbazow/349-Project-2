@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <ul>
+        <li><a href="index.html" id="homeLink">Home</a></li>
+        <li><a href="about.html" id="aboutLink">About</a></li>
+        <li><a href="pricing.html" id="pricingLink">Pricing</a></li>
+        <li><a href="contact.html" id="contactLink" class="active">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="content">
+    <h1>Contact</h1>
+    <p>This is where you can provide contact information or a contact form for visitors to get in touch with you.</p>
+    <form>
+        <div>
+            <label for="request">Request:</label><br>
+            <textarea id="request" name="request" rows="4" cols="50" placeholder="Describe your request..."></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="firstName">First Name:</label><br>
+            <input type="text" id="firstName" name="firstName" placeholder="Enter your first name">
+        </div>
+        <br>
+        <div>
+            <label for="lastName">Last Name:</label><br>
+            <input type="text" id="lastName" name="lastName" placeholder="Enter your last name">
+        </div>
+        <br>
+        <div>
+            <label for="phoneNumber">Phone Number:</label><br>
+            <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Enter your phone number">
+        </div>
+        <br>
+        <div>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+        </div>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

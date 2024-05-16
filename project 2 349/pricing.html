@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <ul>
+        <li><a href="index.html" id="homeLink">Home</a></li>
+        <li><a href="about.html" id="aboutLink">About</a></li>
+        <li><a href="pricing.html" id="pricingLink" class="active">Pricing</a></li>
+        <li><a href="contact.html" id="contactLink" >Contact</a></li>
+    </ul>
+</nav>
+
+
+<div class="content">
+    <h1>Pricing</h1>
+    <p> Here is a calculator of price based on an hourly rate. After further discussion, I will give an estimated hours requirement for a given project.</p>
+    <p> <strong>1 Hour = $40. </strong> Please input your estimated hours. </p>
+    <div class="price-container">
+        <label for="hours">Hours:</label>
+        <button onclick="decrementHours()">-</button>
+        <input type="number" id="hours" value="1" min="1">
+        <button onclick="incrementHours()">+</button>
+        <br>
+        <button onclick="calculatePrice()">Calculate Price</button>
+        <p id="price">Price: $40</p>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
